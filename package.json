@@ -6,11 +6,11 @@
   "scripts": {
     "test": "na"
 	 "start":"node app.js"
-  },
+  }
   "repository": {
     "type": "git",
     "url": "https://github.com/avinash-rdy2903/Wed-Dev.git"
-  },
+  }
   "keywords": [
     "na"
   ],
