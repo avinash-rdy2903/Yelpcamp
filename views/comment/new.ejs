@@ -1,0 +1,18 @@
+<%- include("../partials/header.ejs")%>
+
+<%result%>
+<div class="container mt-3 ">
+	
+		<h2 style="text-align: center; margin-bottom: 20px;">
+		add a new comment to <%=result.name%>
+		</h2>
+		<form action="/campgrounds/<%=result._id%>/comments" method="POST" class="form-group">
+			<input class="w-25 mb-3 form-control mx-auto" type="text" name="comment[text]" placeholder="comment">
+			<button class="w-25 btn btn-primary mx-auto btn-block">submit!</button>
+		</form>	
+	
+	
+	<a class="mx-auto" href="/campgrounds">go back</a>
+</div>
+
+<%- include("../partials/footer.ejs")%>

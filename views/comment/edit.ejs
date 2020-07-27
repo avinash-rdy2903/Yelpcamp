@@ -1,0 +1,20 @@
+<%- include("../partials/header.ejs")%>
+<div class="container mt-3 ">
+		<h2 class="mb-4 text-center">
+		Edit comment</h2>
+		<form action="/campgrounds/<%=campId%>/comments/<%=comment._id%>?_method=PUT" method="POST" class="form-group">
+			<input class="w-25 mb-3 form-control mx-auto" type="text" name="text" value="<%=comment.text%>">
+			<%if(user && comment.author.id.equals(user.id)){%>
+				<button class="w-25 btn btn-primary mx-auto btn-block">submit!</button>
+			<%}else{%>
+				<em>You have no authorization to edit the comment</em>
+			<%}%>
+		</form>	
+	
+	
+	<a class="mx-auto" href="/campgrounds">go back</a>
+</div>
+
+
+
+<%-include("../partials/footer.ejs") %>
