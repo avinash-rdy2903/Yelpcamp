@@ -4,7 +4,7 @@
   "description": "yelp camp v1(final)",
   "main": "app.js",
   "scripts": {
-    "test": "na"
+    "test": "na",
 	 "start":"node app.js"
   },
   "repository": {
