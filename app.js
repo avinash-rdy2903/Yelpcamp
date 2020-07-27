@@ -20,7 +20,8 @@ mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
-mongoose.connect("mongodb+srv://yelpcampUser:password12345@cluster0.rusp7.mongodb.net/<dbname>?retryWrites=true&w=majority");
+mongoose.connect(process.env.DATABASEURL);
+// mongoose.connect("");
 //seedDB();
 
 //Express initials
